@@ -1,0 +1,19 @@
+[
+  "Playwright/test_UI_Validations.py::test_chrome_browser",
+  "Playwright/test_framework_web_api.py::test_e2e_web_api",
+  "Playwright/test_framework_web_api.py::test_e2e_web_api[user_credentials0]",
+  "Playwright/test_framework_web_api.py::test_e2e_web_api[user_credentials1]",
+  "Playwright/test_more_UI_Validation.py::test_chrome_browser",
+  "Playwright/test_playwright_basics.py::test_firefox_browser",
+  "Playwright/test_playwright_basics.py::test_handling_child_window",
+  "Playwright/test_playwright_basics.py::test_playwright_basics",
+  "Playwright/test_playwright_basics.py::test_pw_shortcut[chromium]",
+  "Playwright/test_web_api.py::test_e2e_web_api",
+  "Pytest/test_my_first_tc.py::test_SecondCheck",
+  "Pytest/test_my_first_tc.py::test_first_method",
+  "Pytest/test_my_first_tc.py::test_initialCheck",
+  "playwright/test_web_api.py::test_e2e_web_api",
+  "test_my_first_tc.py::test_SecondCheck",
+  "test_my_first_tc.py::test_first_method",
+  "test_my_first_tc.py::test_initialCheck"
+]

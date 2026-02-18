@@ -1,0 +1,7 @@
+{
+  "Playwright/test_web_api.py": true,
+  "Playwright/test_framework_web_api.py::test_e2e_web_api": true,
+  "Playwright/test_framework_web_api.py::test_e2e_web_api[user_credentials0]": true,
+  "Playwright/test_framework_web_api.py::test_e2e_web_api[user_credentials1]": true,
+  "playwright/test_web_api.py::test_e2e_web_api": true
+}
