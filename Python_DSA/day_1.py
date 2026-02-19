@@ -79,8 +79,6 @@ arr = [2,7,6,3,5,9,4,5]
 target = 10
 
 print(two_sum(arr,target))
-# nums = [2,7,11,15]
-# target = 9
 
 
 
