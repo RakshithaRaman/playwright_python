@@ -20,7 +20,7 @@ def largest_container(arr):
          else:
              right -= 1
 
-    return arr[best_left], arr[best_right], max_area
+    return arr[base_left], arr[base_right], max_area
 
 arr = [1,2,3,4,6,6,4,8,2,9]
 print(largest_container(arr))
