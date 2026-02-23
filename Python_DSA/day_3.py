@@ -12,8 +12,8 @@ def largest_container(arr):
 
          if area > max_area:
              max_area = area
-             best_left = left
-             best_right = right
+             base_left = left
+             base_right = right
 
          if arr[left] < arr[right]:
              left += 1
