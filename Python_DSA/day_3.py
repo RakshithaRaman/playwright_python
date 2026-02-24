@@ -38,4 +38,9 @@ def reverse_num(num):
 
 print(reverse_num(12345))
 
+#####list flatten #########
+a= [[1,2],3,[4,5],6,[7,8]]
+
+new_list = [x for item in a for x in (item if isinstance(item,list) else [item])]
+print(new_list)
 
