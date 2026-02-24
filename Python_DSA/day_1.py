@@ -65,15 +65,18 @@ print(arr)
 def two_sum(nums,target):
     seen ={}
     new_list=[]
+    new=[]
 
     for i in range(len(nums)):
         complement = target - nums[i]
 
         if complement in seen:
             new_list.extend([[complement, nums[i]]])
+            new.extend([(seen[complement],i)])
 
         seen[nums[i]] = i
     print(new_list)
+    print(new)
 
 arr = [2,7,6,3,5,9,4,5]
 target = 10
