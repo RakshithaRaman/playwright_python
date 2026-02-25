@@ -41,7 +41,3 @@ def anagram_check(s,t):
     return True
 
 print(anagram_check("listen","silent"))
-
-
-
-
