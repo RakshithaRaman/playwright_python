@@ -16,3 +16,4 @@ def test_dashboard():
 @pytest.mark.order(2)
 def test_login():
     print("login successful")
+
