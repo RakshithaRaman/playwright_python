@@ -1,9 +1,6 @@
 lines = ["apple", "banana", "cherry"]
-
 result = {i+1: line for i, line in enumerate(lines)}
-
 print(result)
-
 
 def replace_zeros(arr):
     result = []
@@ -23,7 +20,6 @@ def replace_zeros(arr):
 
     return result
 
-
 arr = [1,2,3,0,0,0,2,4,5,0,0,0,0,3,4,8,0,0,1]
 print(replace_zeros(arr))
 
@@ -33,7 +29,7 @@ def find_missing_fib(arr):
         if arr[i] + arr[i+1] != arr[i+2]:
             return arr[i] + arr[i+1]
 
-arr = [1, 1, 2, 3, 5, 8, 21, 34]
+arr = [1, 1, 2, 3, 8, 13, 21, 34]
 print(find_missing_fib(arr))  # 8
 
 
@@ -51,3 +47,43 @@ for k in d2:
         result[k] = d2[k]
 
 print(result)
+
+def min_chairs(simulations):
+    max_chairs = 0
+
+    for sim in simulations:
+        current = 0
+        max_local = 0
+
+        for ch in sim:
+            if ch == 'C' or ch == 'U':
+                current += 1
+            elif ch == 'R' or ch == 'L':
+                current -= 1
+
+            max_local = max(max_local, current)
+
+        max_chairs = max(max_chairs, max_local)
+
+    return max_chairs
+
+
+n = 3
+simulated = ['CCRLU', 'CRLCUC', 'CCCCCCC']
+print(min_chairs(simulated))
+
+def is_valid(s):
+    stack = []
+    mapping = {')': '(', '}': '{', ']': '['}
+
+    for char in s:
+        if char in mapping.values():
+            stack.append(char)
+        else:
+            if not stack or stack.pop() != mapping[char]:
+                return False
+
+    return not stack
+
+print(is_valid('[{()}]'))   # True
+print(is_valid('[{()})]'))   # False
